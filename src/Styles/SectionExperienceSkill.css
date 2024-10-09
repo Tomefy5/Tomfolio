@@ -1,4 +1,6 @@
-*,::after,::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,6 +15,7 @@
     height: 48%;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding: 15px;
 }
 
 .section-competencies {
@@ -23,7 +26,8 @@
 }
 
 .section-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .container-competencies {
@@ -42,7 +46,7 @@
 }
 
 .container-logo-competence {
-    background-color: #222222;
+    background-color: #191919;
     width: 90%;
     height: 65%;
     margin: auto;
@@ -56,9 +60,64 @@
     font-size: 0.9rem;
     text-align: center;
     margin-top: 8px;
-    color: #B4B4B4;
+    color: #b4b4b4;
 }
 
 .logo-competence {
     height: 70%;
+}
+
+.container-experiences {
+    width: 100%;
+    flex: 1 1;
+}
+
+.container-experience {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-years {
+    flex: 1 1 35%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+    color: #B4B4B4;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.container-logo-experience {
+    flex: 1 1 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-society-name {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo-experience {
+    height: 35px;
+}
+
+.society-name {
+    font-size: 1rem;
+    color: #B4B4B4;
+    font-weight: 900;
+}
+
+.post-name {
+    font-size: 0.9rem;
+    color: #706b6b;
 }

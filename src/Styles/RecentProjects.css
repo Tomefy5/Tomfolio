@@ -5,8 +5,70 @@
 }
 
 .section-recent-projects {
-    background-color: blue;
+    background-color: #111111;
     width: 100%;
     height: 60vh;
     border-radius: 10px;
+    padding: 15px 20px 20px 20px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container-recent-projects {
+    width: 100%;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container-project {
+    width: 100%;
+    height: 48%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Assets/Project_images//Black\ and\ White\ Minimalist\ Elegant\ Fashion\ Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-arrow {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.button-more {
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container-project:hover .button-more {
+    z-index: 3;
+    opacity: 1;
+}
+
+.button-icon-more {
+    width: 35px;
+}
+
+.badge-project {
+    background-color: white;
+    color: blue;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 7px;
+    z-index: 3;
+    box-shadow: 2px 2px 15px rgb(184, 182, 182);
 }

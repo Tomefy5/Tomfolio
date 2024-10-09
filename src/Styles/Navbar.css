@@ -1,0 +1,49 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 45%;
+    height: calc(100% - 15px);
+    position: relative;
+    margin: auto;
+}
+
+.navbar-collapse ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #B4B4B4;
+}
+
+.navbar-collapse ul li a {
+    color: #B4B4B4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-collapse ul li a:hover {
+    color: #ffffff;
+}
+
+.navbar-collapse ul li a:focus {
+    color: #ffffff;
+}
+
+.container-icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}

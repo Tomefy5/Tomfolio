@@ -1,0 +1,43 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header-navbar {
+    background-color: #111111 ;
+    height: auto;
+    margin-top: 1vh;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-logo {
+    height: 40px;
+    width: 40px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.tomefy-logo {
+    width: 90%;
+    height: 90%;
+}
+
+.container-nom-logo {
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: #111111;
+}
+
+.tomefy-logo-name {
+    width: 100%;
+    height: 100%;
+}

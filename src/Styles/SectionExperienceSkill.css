@@ -1,0 +1,64 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.section-work-experience-competencies {
+    height: 60vh;
+}
+
+.section-work-experience {
+    background-color: #111111;
+    height: 48%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section-competencies {
+    background-color: #111111;
+    height: 48%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+}
+
+.container-competencies {
+    height: 200px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-competence {
+    height: 100px;
+    flex: 1 1 calc(33.333% - 10px);
+    padding: 5px 0 0 0;
+}
+
+.container-logo-competence {
+    background-color: #222222;
+    width: 90%;
+    height: 65%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.competence-name {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 8px;
+    color: #B4B4B4;
+}
+
+.logo-competence {
+    height: 70%;
+}

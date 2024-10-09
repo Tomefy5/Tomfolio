@@ -1,0 +1,24 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-social-link {
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.social-media-link {
+    background-color: #2A2A2A;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+.logo {
+    width: 18px;
+}

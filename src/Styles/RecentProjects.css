@@ -1,0 +1,12 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.section-recent-projects {
+    background-color: blue;
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-all-body-sections {
+    /* background-color: #111111; */
+    margin-top: 45px;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.container-first-sections {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .first-col {
+        margin-top: 0;
+    }
+}
+

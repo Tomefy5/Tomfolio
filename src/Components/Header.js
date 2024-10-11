@@ -8,7 +8,7 @@ import HeaderTools from './HeaderTools'
 export default function Header() {
 
   return (
-    <header className='header-navbar container-fluid position-relative'>
+    <header className='header-navbar container-fluid'>
         <div className='container-logo'>
           <img className='tomefy-logo' src={logoTomefy} alt="MyLogo" />
         </div>
@@ -17,6 +17,7 @@ export default function Header() {
         </div>
         <Navbar />
         <HeaderTools />
+        {/* <div className='container-side-menu'></div> */}
     </header>
   )
 }

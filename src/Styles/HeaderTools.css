@@ -51,3 +51,10 @@
 .icon-to-talk {
     height: 60%;
 }
+
+
+@media screen and (max-width: 768px) {
+    .container-header-tools {
+        display: none;
+    }
+}

@@ -14,11 +14,15 @@ export default function Sections() {
           <div className="col-xl-4 m-xl-0">
             <SectionProfil />
           </div>
-          <div className="col-xl-4 m-xl-0">
-            <SectionExperienceSkill />
-          </div>
-          <div className="col-xl-4 m-xl-0">
-            <RecentProjects />
+          <div className="col-xl-8 m-xl-0 variable-section">
+            <div className="row">
+              <div className="col-xl-6 m-xl-0">
+                <SectionExperienceSkill />
+              </div>
+              <div className="col-xl-6 m-xl-0">
+                <RecentProjects />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -29,12 +33,20 @@ export default function Sections() {
           </div>
           <div className="col-xl-4">
             <div className="container-let-work-together">
-              <div className="container-scroll-text container-fluid">Scrolling text</div>
+              <div className="container-scroll-text container-fluid">
+                Scrolling text
+              </div>
               <div className="work-together-text-container">
-                <span className="text-work-together w-75">Let's 👋 Work Together</span>
+                <span className="text-work-together w-75">
+                  Let's 👋 Work Together
+                </span>
                 <a href="#" className="let-talk-link mt-2">
                   Let's talk
-                  <img src={iconArrowRigth} alt="iconArrowRigth" className="icon-arrow" />
+                  <img
+                    src={iconArrowRigth}
+                    alt="iconArrowRigth"
+                    className="icon-arrow"
+                  />
                 </a>
               </div>
             </div>

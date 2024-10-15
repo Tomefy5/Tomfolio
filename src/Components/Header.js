@@ -17,7 +17,7 @@ export default function Header() {
         </div>
         <Navbar />
         <HeaderTools />
-        {/* <div className='container-side-menu'></div> */}
+        <div className='container-side-menu'></div>
     </header>
   )
 }

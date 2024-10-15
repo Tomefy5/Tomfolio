@@ -1,26 +1,26 @@
-*,::after,::before {
+*,
+::after,
+::before {
   box-sizing: 0;
   padding: 0;
   margin: 0;
 }
 
 .App {
-  background-color: grey;
   width: 100%;
   height: auto;
   position: absolute;
   font-size: 16px;
   color: white;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
 }
 
 .container-sections {
-  background-color: rgb(179, 176, 176);
   height: auto;
   min-height: 100vh;
   padding: 10px;
 }
-
-
 
 /* ================================ Fonts responsives =================================== */
 
@@ -29,43 +29,43 @@ html {
 }
 
 body {
-  font-size: 1rem; 
-  line-height: 1.6; 
-  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
 }
 
 h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2rem; 
+  font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 
 h3 {
-  font-size: 1.75rem; 
+  font-size: 1.75rem;
   margin-bottom: 0.6rem;
 }
 
 h4 {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 h5 {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   margin-bottom: 0.4rem;
 }
 
 h6 {
-  font-size: 1rem; 
+  font-size: 1rem;
   margin-bottom: 0.3rem;
 }
 
 p {
-  font-size: 1rem; 
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -75,75 +75,75 @@ p {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 3rem; 
+    font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
   h3 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
   p {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
   }
 }
 
 @media (max-width: 1200px) {
   h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
   }
   p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 2.25rem; 
+    font-size: 2.25rem;
   }
   h2 {
-    font-size: 1.875rem; 
+    font-size: 1.875rem;
   }
   h3 {
-    font-size: 1.625rem; 
+    font-size: 1.625rem;
   }
   p {
-    font-size: 0.95rem; 
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
   }
   h3 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
   p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
   }
   h2 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 1.375rem; 
+    font-size: 1.375rem;
   }
   p {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
   }
 }

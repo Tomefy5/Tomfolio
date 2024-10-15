@@ -5,12 +5,13 @@ import iconContact from "../Assets/icons/contact-papperplane-communication-svgre
 import iconAbout from "../Assets/icons/file-info-alt-svgrepo-com.svg";
 import iconService from "../Assets/icons/service-setting-svgrepo-com.svg"
 import iconHamburger from "../Assets/icons/hamburger-menu-svgrepo-com.svg"
+import { Link } from "react-router-dom";
 
 const initialNavbarContent = [
-  { navigation: "Home", source: iconHome, alternative: "iconHome", href: "./" },
-  { navigation: "About", source: iconAbout, alternative: "iconAbout", href: "./" },
-  { navigation: "Service", source: iconService, alternative: "iconService", href: "./" },
-  { navigation: "Contact", source: iconContact, alternative: "iconContact", href: "./" },
+  { navigation: "Home", source: iconHome, alternative: "iconHome", href: "/" },
+  { navigation: "About", source: iconAbout, alternative: "iconAbout", href: "/" },
+  { navigation: "Service", source: iconService, alternative: "iconService", href: "/" },
+  { navigation: "Contact", source: iconContact, alternative: "iconContact", href: "/" },
 ];
 
 export default function Navbar() {
@@ -28,13 +29,13 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img className="icon-hamburger" src={iconHamburger} alt="iconHamburger" />
+        <img className="icon-hamburger" src={iconHamburger} alt="iconHamburger" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             {navbarContent.map((item, index) => (
               <li className="nav-item">
-                <a href={item.href} className="nav-link">
+                <a to={item.href} key={index} className="nav-link">
                   <span className="container-icon">
                     <img className="icon" src={item.source} alt={item.alternative} />
                   </span>

@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 
 const initialNavbarContent = [
   { navigation: "Home", source: iconHome, alternative: "iconHome", href: "/" },
-  { navigation: "About", source: iconAbout, alternative: "iconAbout", href: "/" },
-  { navigation: "Service", source: iconService, alternative: "iconService", href: "/" },
-  { navigation: "Contact", source: iconContact, alternative: "iconContact", href: "/" },
+  { navigation: "About", source: iconAbout, alternative: "iconAbout", href: "/about" },
+  { navigation: "Service", source: iconService, alternative: "iconService", href: "/services" },
+  { navigation: "Contact", source: iconContact, alternative: "iconContact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -35,12 +35,12 @@ export default function Navbar() {
           <ul className="navbar-nav ms-auto">
             {navbarContent.map((item, index) => (
               <li className="nav-item">
-                <a to={item.href} key={index} className="nav-link">
+                <Link to={item.href} key={index} className="nav-link">
                   <span className="container-icon">
                     <img className="icon" src={item.source} alt={item.alternative} />
                   </span>
                   { item.navigation }
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

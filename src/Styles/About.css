@@ -1,0 +1,10 @@
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-section-about {
+    background-color: #111111;
+    border-radius: 10px;
+}

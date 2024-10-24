@@ -11,50 +11,29 @@
     margin: auto;
 }
 
-.icon-hamburger {
-    width: 40px;
-}
-.navbar-collapse ul {
-    width: 100%;
+.navbar-nav {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-around;
-    color: #B4B4B4;
 }
 
-.navbar-collapse ul li a {
-    color: #B4B4B4;
+.nav-item {
+    list-style: none;
+    color: #b4b4b4;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    font-weight: 600;
 }
 
-.navbar-collapse ul li a:hover {
-    color: #ffffff;
+
+.nav-link {
+    color: #b4b4b4;
 }
 
-.navbar-collapse ul li a:focus {
-    color: #ffffff;
-}
 
-.container-icon {
-    width: 22px;
+.nav-icon {
     height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon {
-    width: 100%;
-    height: 100%;
-    margin-right: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        width: 75%;
-        display: flex;
-        justify-content: flex-end;
-    }
+    margin-right: 10px;
 }

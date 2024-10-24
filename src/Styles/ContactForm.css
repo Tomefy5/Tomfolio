@@ -1,0 +1,30 @@
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contact-form {
+    background-color: #2A2A2A;
+    border-radius: 5px;
+}
+
+.form-control {
+    background-color: #111111;
+    border: none;
+}       
+
+.form-control:focus {
+    background-color: #111111;
+}
+
+.form-control::placeholder {
+    color: #a0a0a0;
+}
+
+.form-group  label {
+    font-weight: 600;
+    color: #B4B4B4;
+    margin-bottom: 10px;
+}

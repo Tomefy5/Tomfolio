@@ -13,10 +13,17 @@
 .form-control {
     background-color: #111111;
     border: none;
-}       
+    color: #ffffff;
+}  
+
+#name, 
+#email {
+    height: 5vh;
+}
 
 .form-control:focus {
     background-color: #111111;
+    color: #ffffff;
 }
 
 .form-control::placeholder {
@@ -27,4 +34,12 @@
     font-weight: 600;
     color: #B4B4B4;
     margin-bottom: 10px;
+}
+
+label[for="message"] {
+    margin-top: 10px;
+}
+
+#message {
+    min-height: 20vh;
 }

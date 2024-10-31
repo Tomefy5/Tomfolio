@@ -3,3 +3,26 @@
     background-color: #111111;
     border-radius: 10px;
 }
+
+.container-logo-competence2 {
+    background-color: #191919;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-competence2 {
+    width: 70%;
+    height: 70%;
+}
+
+.competence-name2 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 8px;
+    color: #b4b4b4;
+    width:90px;
+}

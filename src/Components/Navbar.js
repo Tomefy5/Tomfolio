@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import HeaderTools from "./HeaderTools";
 import logoTomefy from "../Assets/Logo_tomefy/logo_tomefy.png";
 import logoTomfolio from "../Assets/Logo_tomefy/logo_nom_tomefy.png";
+import logoHamburger from "../Assets/icons/hamburger-menu-svgrepo-com.svg";
 
 const navbarContent = [
   { navigation: "Home", source: iconHome, alternative: "iconHome", href: "/" },
@@ -31,20 +32,27 @@ const navbarContent = [
   },
 ];
 
-export default function Navbar({navbarState}) {
+export default function Navbar({ navbarState, toggleNavbar }) {
   return (
-    <nav className={`barnav ${navbarState ? 'open' : ''}`}>
+    <nav className={`barnav ${navbarState ? "open" : ""}`}>
       <div className="container-tomefy-logos">
         <div className="container-logo-tom">
-          <img className="tomefy-logo" src={logoTomefy} alt="MyLogo" /> 
+          <img className="tomefy-logo" src={logoTomefy} alt="MyLogo" />
         </div>
-        <div className="container-nom-logo" style={{width: "45%"}}>
+        <div className="container-nom-logo" style={{ width: "45%" }}>
           <img
             className="tomefy-logo-name"
             src={logoTomfolio}
             alt="My logo name"
           />
         </div>
+        <button className="btn-hamburger-320" onClick={toggleNavbar}>
+          <img
+            className="logoHamburger"
+            src={logoHamburger}
+            alt="logoDownload"
+          />
+        </button>
       </div>
       <ul className="barnav-nav">
         {navbarContent.map((nav) => (

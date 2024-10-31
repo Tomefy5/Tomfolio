@@ -96,9 +96,30 @@
     }    
 }
 
+.btn-hamburger-320 {
+    display: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    background-color: transparent;
+    display: none;
+}
+
+.logoHamburger {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin: 4px;
+}
+
 
 @media screen and (max-width: 320px) {
-    .barnav {
-        width: 320px;
+    .btn-hamburger-320 {
+        display: flex;
     }
 }

@@ -21,7 +21,7 @@ export default function Header() {
         <div className='container-nom-logo'>
           <img className='tomefy-logo-name' src={logoTomfolio} alt="My logo name" />
         </div>
-        <Navbar navbarState={isNavbarOpen}/>
+        <Navbar navbarState={isNavbarOpen} toggleNavbar={toggleNavbar}/>
         <button className='btn-hamburger' onClick={toggleNavbar} >
           <img className='logoHamburger' src={logoHamburger} alt="logoDownload" />
         </button>

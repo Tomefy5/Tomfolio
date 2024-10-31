@@ -7,7 +7,7 @@
 }
 
 .section-work-experience-competencies {
-    height: 60vh;
+    height: auto;
 }
 
 .section-work-experience {
@@ -20,7 +20,7 @@
 
 .section-competencies {
     background-color: #111111;
-    height: 48%;
+    height: auto;
     border-radius: 10px;
     padding: 15px;
 }
@@ -77,7 +77,7 @@
     height: 25%;
     display: flex;
     flex-direction: row;
-}
+}   
 
 .container-years {
     flex: 1 1 35%;
@@ -121,3 +121,6 @@
     font-size: 0.9rem;
     color: #706b6b;
 }
+
+
+

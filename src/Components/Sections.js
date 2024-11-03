@@ -17,7 +17,7 @@ export default function Sections() {
     <div className="container-all-body-sections">
       <div className="container container-first-sections">
         <div className="row g-4 ">
-          <div className="col-xl-4 m-xl-0">
+          <div className="col-xl-4 m-xl-0 mt-0">
             <SectionProfil />
           </div>
           <div className="col-xl-8 m-xl-0 variable-section">
@@ -36,15 +36,15 @@ export default function Sections() {
             <div className="col-xl-8">
               <ServicesOffered />
             </div>
-            <div className="col-xl-4">
+            <div className="col-xl-4 h-auto">
               <div className="container-let-work-together">
                 <div className="container-scroll-text container-fluid">
                   Scrolling text
                 </div>
                 <div className="work-together-text-container">
-                  <span className="text-work-together w-75">
+                  <h1 className="text-work-together">
                     Let's 👋 Work Together
-                  </span>
+                  </h1>
                   <a href="#" className="let-talk-link mt-2">
                     Let's talk
                     <img

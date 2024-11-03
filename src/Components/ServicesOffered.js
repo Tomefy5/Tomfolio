@@ -13,7 +13,7 @@ const servicesOffered = [
 export default function ServicesOffered() {
   return (
     <div className="container-section-services-offered d-flex flex-column">
-      <div className="container-section-title d-flex     justify-content-between">
+      <div className="container-section-title d-flex justify-content-between">
         <h2 className="section-title">Services I offered</h2>
         <a className="section-service-link" href="./">
           See All Services
@@ -26,7 +26,7 @@ export default function ServicesOffered() {
       </div>
       <div className="container-services-offered">
         {servicesOffered.map((service, index) => (
-          <div className="container-service">
+          <div key={index} className="container-service">
             <div className="container-icon-service">
               <img className="icon-service" src={service.icon} alt={`icon${service.service}`} />
             </div>

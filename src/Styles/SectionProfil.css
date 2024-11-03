@@ -14,7 +14,7 @@
 
 .container-pdp {
     height: 29.7vh;
-    background-color: #222222;
+    background-color: #171717;
     border-radius: 10px;
     background-image: url(../Assets/Photo_profil/photo-profil.png);
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .section-profil-description {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 500;
     color: #B4B4B4;
 }
@@ -44,4 +44,31 @@
 
 .logo {
     width: 20px;
+}
+
+.logo-copy {
+    color: #0e51c2;
+    transition: all 0.2s ease;
+}
+
+.btn-copy:hover .logo-copy {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-pdp {
+        background-size: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-pdp {
+        background-size: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-pdp {
+        background-size: cover;
+    }
 }

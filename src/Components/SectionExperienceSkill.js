@@ -9,10 +9,10 @@ import logoPython from "../Assets/iconCompetencies/python-svgrepo-com.svg";
 import logoMeta from "../Assets/Logo society/meta-svgrepo-com.svg";
 
 const experiences = [
-  { name: "UX/UI design", logo: logoMeta, years: "2022-2024", society: "Meta" },
-  { name: "UX/UI design", logo: logoMeta, years: "2022-2024", society: "Meta" },
-  { name: "UX/UI design", logo: logoMeta, years: "2022-2024", society: "Meta" },
-  { name: "UX/UI design", logo: logoMeta, years: "2022-2024", society: "Meta" },
+  { name: "UX/UI designer", logo: logoMeta, years: "2022-2024", society: "Meta" },
+  { name: "UX/UI designer", logo: logoMeta, years: "2022-2024", society: "Meta" },
+  { name: "UX/UI designer", logo: logoMeta, years: "2022-2024", society: "Meta" },
+  { name: "UX/UI designer", logo: logoMeta, years: "2022-2024", society: "Meta" },
 ];
 
 const skills = [
@@ -42,8 +42,8 @@ export default function SectionExperienceSkill() {
                   />
                 </div>
                 <div className="container-society-name">
-                  <h5 className="society-name">Meta</h5>
-                  <h6 className="post-name">UX/UI designer</h6>
+                  <h5 className="society-name">{experience.society}</h5>
+                  <h6 className="post-name">{experience.name}</h6>
                 </div>
               </div>
             ))}

@@ -26,3 +26,37 @@
     color: #b4b4b4;
     width:90px;
 }
+
+.container-services-offered {
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    height: auto;
+    min-height: 145px;
+  }
+
+
+.container-service2 {
+    background-color: #191919;
+    width: 22%;
+    height: 21vh;
+    border-radius: 10px;
+    flex-shrink: 0;
+    padding: 10px;
+    min-height: 160px;
+}
+
+@media screen and (max-width:1024px) {
+    .container-service2 {
+        height: 25vh;
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-service2 {
+        width: 115px;
+    }
+}

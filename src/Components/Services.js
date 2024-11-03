@@ -33,7 +33,7 @@ export default function Services() {
       </p>
       <div className="container-services-offered mt-4">
         {servicesOffered.map((service, index) => (
-          <div key={index} className="container-service">
+          <div key={index} className="container-service2">
             <div className="container-icon-service">
               <img
                 className="icon-service"
@@ -48,7 +48,7 @@ export default function Services() {
       <h3 className="setion-technologies-title mt-4">Technologies I Use</h3>
       <div className="container-competencies container row m-auto mt-4 h-auto">
         {skills.map((skill, index) => (
-          <div key={index} className="col-lg-2 col-md-4 col-6">
+          <div key={index} className="col-lg-2 col-md-4 col-6 d-flex flex-column justify-content-center align-items-center">
             <div className="container-logo-competence2">
               <img
                 className="logo-competence2"

@@ -41,10 +41,21 @@
     margin: 0;
 }
 
+.nav-link:hover {
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
 
 .nav-icon {
     height: 22px;
     margin-right: 10px;
+    color: #B4B4B4;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover .nav-icon {
+    color: #ffffff;
 }
 
 .container-tomefy-logos {
@@ -57,7 +68,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 10000;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start ;
@@ -115,6 +126,12 @@
     height: 100%;
     background-color: transparent;
     margin: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+    .barnav {
+        width: 90%;
+    }
 }
 
 

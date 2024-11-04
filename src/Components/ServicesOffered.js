@@ -1,7 +1,8 @@
 import React from "react";
 import "../Styles/ServicesOffered.css";
-import iconArrowRigth from "../Assets/icons/arrow-trend-up-svgrepo-com.svg";
 import iconDesign from "../Assets/service_icon/design-svgrepo-com.svg";
+import IconArrowRigth from "./IconArrowRigth";
+import { Link } from "react-router-dom";
 
 const servicesOffered = [
   { service: "UX/UI Design", icon: iconDesign },
@@ -15,14 +16,10 @@ export default function ServicesOffered() {
     <div className="container-section-services-offered d-flex flex-column">
       <div className="container-section-title d-flex justify-content-between">
         <h2 className="section-title">Services I offered</h2>
-        <a className="section-service-link" href="./">
+        <Link className="section-service-link" to={"/services"}>
           See All Services
-          <img
-            className="icon-arrow"
-            src={iconArrowRigth}
-            alt="iconArrowRigth"
-          />
-        </a>
+          <IconArrowRigth />
+        </Link>
       </div>
       <div className="container-services-offered">
         {servicesOffered.map((service, index) => (

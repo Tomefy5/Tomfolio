@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/HeaderTools.css";
 import iconBrightness from "../Assets/icons/sun-2-svgrepo-com.svg";
 import iconToTalk from "../Assets/icons/arrow-u-down-right-svgrepo-com.svg";
+import { Link } from "react-router-dom";
 
 export default function HeaderTools() {
   return (
@@ -16,10 +17,10 @@ export default function HeaderTools() {
         </button>
       </div>
       <div className="container-tool-to-talk col-9">
-        <a className="to-talk-link" href="./">
+        <Link className="to-talk-link" to="/contact">
           <span className="to-talk-text">Let's Talk</span>
           <img className="icon-to-talk" src={iconToTalk} alt="iconToTalk" />
-        </a>
+        </Link>
       </div>
     </div>
   );

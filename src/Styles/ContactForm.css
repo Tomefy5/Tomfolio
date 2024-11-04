@@ -36,7 +36,8 @@
     margin-bottom: 10px;
 }
 
-label[for="message"] {
+label[for="message"],
+label[for="email"] {
     margin-top: 10px;
 }
 

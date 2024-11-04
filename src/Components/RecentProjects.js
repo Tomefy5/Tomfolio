@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/RecentProjects.css";
-import iconArrowRigth from "../Assets/icons/arrow-trend-up-svgrepo-com.svg";
 import iconMore from "../Assets/icons/more-svgrepo-com.svg";
+import IconArrowRigth from "./IconArrowRigth"; 
 
 const recentProjects = [
   { link: "./", type: "E-learning" },
@@ -14,16 +14,12 @@ export default function RecentProjects() {
         <h2 className="section-title">Recent Projects</h2>
         <a href="./">
           All projects
-          <img
-            className="logo-arrow"
-            src={iconArrowRigth}
-            alt="icon arrow right"
-          />
+          <IconArrowRigth />
         </a>
       </div>
       <div className="container-recent-projects">
         {recentProjects.map((project, index) => (
-          <div className="container-project position-relative">
+          <div key={index} className="container-project position-relative">
             <a href={project.link} className="button-more">
               <img
                 className="button-icon-more"
@@ -38,3 +34,5 @@ export default function RecentProjects() {
     </div>
   );
 }
+
+

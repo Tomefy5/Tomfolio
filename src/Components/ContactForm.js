@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../Styles/ContactForm.css";
 
-const ContactForm = () => {
+const ContactForm = ({darkTheme}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,19 +40,19 @@ const ContactForm = () => {
 
   return (
     <div>
-      <h2>Let's work together</h2>
+      <h2 className="section-contact-title">Let's work together</h2>
       <p className="section-contact-descri">
         I’d love to hear from you! Whether you have questions, collaboration
         ideas, or just want to connect, feel free to reach out!
       </p>
-      <form className="contact-form p-3" onSubmit={handleSubmit}>
+      <form className={`contact-form p-3 ${darkTheme ? 'dark-theme' : ''}`} onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-xl-6">
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
-                className="form-control"
+                className={`form-control ${darkTheme ? 'dark-theme' : ''}`}
                 id="name"
                 name="name"
                 value={formData.name}
@@ -67,7 +67,7 @@ const ContactForm = () => {
               <label htmlFor="email">Email</label>
               <input
                 type="email"
-                className="form-control"
+                className={`form-control ${darkTheme ? 'dark-theme' : ''}`}
                 id="email"
                 name="email"
                 value={formData.email}
@@ -81,7 +81,7 @@ const ContactForm = () => {
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
-            className="form-control"
+            className={`form-control ${darkTheme ? 'dark-theme' : ''}`}
             id="message"
             name="message"
             value={formData.message}
@@ -97,6 +97,6 @@ const ContactForm = () => {
       </form>
     </div>
   );
-};
+}
 
 export default ContactForm;

@@ -15,7 +15,7 @@ const servicesOffered = [
   { service: "Website Maintenance", icon: iconDesign },
 ];
 
-export default function Services() {
+export default function Services({darkTheme}) {
   const skills = [
     { name: "React", logo: logoReact },
     { name: "PHP", logo: logoPhp },
@@ -23,17 +23,17 @@ export default function Services() {
     { name: "Bootstrap", logo: logoBootstrap },
     { name: "Python", logo: logoPython },
     { name: "Github", logo: logoGithub },
-  ];
+  ]
   return (
-    <div className="container-section-service p-4">
-      <h2 className="section-service-title">Services I offered</h2>
+    <div className={`container-section-service p-4 ${darkTheme ? 'dark-theme' : ''}`}>
+      <h2 className={`section-service-title`}>Services I offered</h2>
       <p className="services-descri">
         Bringing Concepts to Life: Enhance Your Vision with Our Skilled Product
         Design and Development Solutions!
       </p>
       <div className="container-services-offered mt-4">
         {servicesOffered.map((service, index) => (
-          <div key={index} className="container-service2">
+          <div key={index} className={`container-service2`}>
             <div className="container-icon-service">
               <img
                 className="icon-service"
@@ -45,11 +45,11 @@ export default function Services() {
           </div>
         ))}
       </div>
-      <h3 className="setion-technologies-title mt-4">Technologies I Use</h3>
+      <h3 className={`setion-technologies-title mt-4`}>Technologies I Use</h3>
       <div className="container-competencies container row m-auto mt-4 h-auto">
         {skills.map((skill, index) => (
           <div key={index} className="col-lg-2 col-md-4 col-6 d-flex flex-column justify-content-center align-items-center">
-            <div className="container-logo-competence2">
+            <div className={`container-logo-competence2`}>
               <img
                 className="logo-competence2"
                 src={skill.logo}
@@ -61,5 +61,5 @@ export default function Services() {
         ))}
       </div>
     </div>
-  );
+  )
 }

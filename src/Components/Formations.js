@@ -1,8 +1,7 @@
 import React from "react";
 import "../Styles/Formations.css";
-import { type } from "@testing-library/user-event/dist/type";
 
-export default function Formations() {
+export default function Formations({ darkTheme }) {
   const formations = [
     {
       name: "MISA",
@@ -32,14 +31,19 @@ export default function Formations() {
       </h2>
       <div className="container-formations">
         {formations.map((formation, index) => (
-          <div className="formation card mt-5" key={index}>
+          <div
+            className={`formation card mt-5 ${darkTheme ? "dark-theme" : ""}`}
+            key={index}
+          >
             <div className="card-header">
-              <div className={`container-logo container-logo-${formation.name.toLocaleLowerCase()} bg-secondary me-3`}></div>
-              { formation.name }
+              <div
+                className={`container-logo container-logo-${formation.name.toLocaleLowerCase()} me-3`}
+              ></div>
+              {formation.name}
             </div>
             <div className="card-body">
-              <h6 className="card-title">{ formation.type }</h6>
-              <p className="card-text">{ formation.description }</p>
+              <h6 className="card-title">{formation.type}</h6>
+              <p className="card-text">{formation.description}</p>
             </div>
           </div>
         ))}

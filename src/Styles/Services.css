@@ -1,16 +1,25 @@
 .container-section-service {
-  background-color: #111111;
+  background-color: var(--background-color);
   border-radius: 10px;
 }
 
 .container-logo-competence2 {
-  background-color: #191919;
+  background-color: var(--background-color-second);
   width: 90px;
   height: 90px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-service-title,
+.setion-technologies-title {
+  color: var(--text-color-focus);
+}
+
+.services-descri {
+  color: var(--text-color);
 }
 
 .logo-competence2 {
@@ -22,7 +31,7 @@
   font-size: 0.9rem;
   text-align: center;
   margin-top: 8px;
-  color: #b4b4b4;
+  color: var(--text-color);
   width: 90px;
 }
 
@@ -37,7 +46,7 @@
 }
 
 .container-service2 {
-  background-color: #191919;
+  background-color: var(--background-color-second);
   width: 22%;
   height: 21vh;
   border-radius: 10px;

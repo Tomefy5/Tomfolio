@@ -10,11 +10,11 @@ const initialSocialMedia = [
   { name: "linkedin", logo: logoLinkedin, href: "./" },
 ];
 
-export default function SocialMedia() {
+export default function SocialMedia({darkTheme}) {
   const [socialMedia] = useState(initialSocialMedia);
 
   return (
-    <div className="container-social-link container-fluid p-0">
+    <div className={`container-social-link container-fluid p-0 ${darkTheme ? 'dark-theme' : ''}`}>
       {socialMedia.map((item, index) => (
         <a key={index} className="social-media-link" href={item.href}>
           <div className="container-logo-social-media">
@@ -23,5 +23,5 @@ export default function SocialMedia() {
         </a>
       ))}
     </div>
-  );
+  )
 }

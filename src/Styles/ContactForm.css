@@ -4,14 +4,22 @@
     box-sizing: border-box;
 }
 
+.section-contact-title {
+    color: var(--text-color-focus);
+}
+
+.section-contact-descri {
+    color: var(--text-color);
+}
+
 
 .contact-form {
-    background-color: #2A2A2A;
+    background-color: var(--background-color-second);
     border-radius: 5px;
 }
 
 .form-control {
-    background-color: #111111;
+    background-color: var(--background-color);
     border: none;
     color: #ffffff;
 }  
@@ -22,7 +30,7 @@
 }
 
 .form-control:focus {
-    background-color: #111111;
+    background-color: var(--background-color);
     color: #ffffff;
 }
 
@@ -32,7 +40,7 @@
 
 .form-group  label {
     font-weight: 600;
-    color: #B4B4B4;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -43,4 +51,10 @@ label[for="email"] {
 
 #message {
     min-height: 20vh;
+}
+
+@media screen and (min-width: 1440px) {
+    label[for="email"] {
+        margin-top: 0;
+    }
 }

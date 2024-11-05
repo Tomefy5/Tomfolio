@@ -14,8 +14,8 @@ export default function SectionProfil({darkTheme}) {
   return (
     <div className={`section-profil ${darkTheme ? 'dark-theme': ''}`}>
       <div className="container-fluid container-pdp"></div>
-      <h1 className="section-profil-name">{profilInformations.name}</h1>
-      <p className="section-profil-description">
+      <h1 className={`section-profil-name ${darkTheme ? 'dark-theme' : ''}`}>{profilInformations.name}</h1>
+      <p className={`section-profil-description`}>
         {profilInformations.description}
       </p>
       <div className="container fluid d-flex justify-content-start p-0">
@@ -28,7 +28,7 @@ export default function SectionProfil({darkTheme}) {
           Copy email
         </button>
       </div>
-      <SocialMedia />
+      <SocialMedia darkTheme={darkTheme}/>
     </div>
   )
 }
@@ -37,7 +37,7 @@ export default function SectionProfil({darkTheme}) {
 const CopyIcon = () => (
   <svg
     width="20px"
-    height="20px"
+    height="20px" 
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

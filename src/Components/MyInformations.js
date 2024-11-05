@@ -1,8 +1,7 @@
 import React from "react";
 import "../Styles/MyInformations.css";
 
-export default function MyInformations() {
-
+export default function MyInformations({darkTheme}) {
   const myInformations = {
     "Last Name" : "ANDRY TSIRESY ANDRIAMBONIHAJA",
     "First Name" : "Tomefy Ny Soa",
@@ -17,7 +16,7 @@ export default function MyInformations() {
       <div className="container-info-perso-descri row">
         <div className="col-xl-6">
           <p className="info-perso-descri">
-            <h3 className="info-perso-descri-title">
+            <h3 className={`info-perso-descri-title ${darkTheme ? 'dark-theme' : ''}`}>
               Hi, I’m Tomefy, a Developer.
             </h3>
             I’ve learned computer science through self-study, which has fueled
@@ -32,7 +31,7 @@ export default function MyInformations() {
           <ul class="list-group">
             {
               Object.entries(myInformations).map(([key, value], index) => (
-                <li key={index} class="list-group-item">
+                <li key={index} class={`list-group-item ${darkTheme ? 'dark-theme' : ''}`}>
                   <strong>{key}:</strong> {value}
                 </li>
               ))

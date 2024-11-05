@@ -9,7 +9,7 @@ const servicesOffered = [
   { service: "UX/UI Design", icon: iconDesign },
   { service: "UX/UI Design", icon: iconDesign },
   { service: "UX/UI Design", icon: iconDesign },
-];
+]
 
 export default function ServicesOffered({darkTheme}) {
   return (
@@ -27,7 +27,7 @@ export default function ServicesOffered({darkTheme}) {
             <div className={`container-icon-service ${darkTheme ? 'dark-theme': ''}`}>
               <img className="icon-service" src={service.icon} alt={`icon${service.service}`} />
             </div>
-            <h5 className="service-name">{service.service}</h5>
+            <h5 className={`service-name ${darkTheme ? 'dark-theme': ''}`}>{service.service}</h5>
           </div>
         ))}
       </div>

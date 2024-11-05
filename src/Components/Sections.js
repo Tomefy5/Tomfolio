@@ -38,9 +38,9 @@ export default function Sections({darkTheme}) {
             </div>
             <div className="col-xl-4 h-auto">
               <div className={`container-let-work-together ${darkTheme ? 'dark-theme': ''}`}>
-                <ScrollingText />
+                <ScrollingText darkTheme={darkTheme}/>
                 <div className="work-together-text-container">
-                  <h1 className="text-work-together">Let's 👋 Work Together</h1>
+                  <h1 className={`text-work-together ${darkTheme ? 'dark-theme' : ''}`}>Let's 👋 Work Together</h1>
                   <Link to={"/contact"} className="let-talk-link mt-2">
                     Let's talk
                     <IconArrowRigth />

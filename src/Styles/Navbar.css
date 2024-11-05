@@ -27,7 +27,7 @@
 
 .nav-item {
     list-style: none;
-    color: #b4b4b4;
+    color: var(--text-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,20 +37,20 @@
 
 
 .nav-link {
-    color: #b4b4b4;
+    color: var(--text-color);
     margin: 0;
 }
 
 .nav-link.active {
-    color: #ffffff;
+    color: var(--text-color-focus);
 }
 
 .nav-link.active .nav-icon {
-    color: #ffffff;
+    color: var(--text-color-focus);
 }
 
 .nav-link:hover {
-    color: #ffffff;
+    color: var(--text-color-focus);
     transition: all 0.2s ease;
 }
 
@@ -58,12 +58,12 @@
 .nav-icon {
     height: 22px;
     margin-right: 10px;
-    color: #B4B4B4;
+    color: var(--text-color);
     transition: all 0.2s ease;
 }
 
 .nav-link:hover .nav-icon {
-    color: #ffffff;
+    color: var(--text-color-focus);
 }
 
 .container-tomefy-logos {
@@ -81,7 +81,7 @@
         justify-content: flex-start;
         align-items: flex-start ;
         height: 100vh;
-        background-color: #111111;
+        background-color: var(--background-color);
         width: 280px;
         overflow: hidden;
         transform: translateX(-100%);
@@ -107,7 +107,7 @@
     
     .container-tomefy-logos {
         display: flex;
-        background-color: #111111;
+        background-color: var(--background-color);
         width: 100%;
         justify-content: flex-start;
         padding: 20px;

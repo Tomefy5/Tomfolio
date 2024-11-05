@@ -41,8 +41,8 @@ export default function Navbar({ navbarState, toggleNavbar ,toggleDarkTheme, dar
   };
 
   return (
-    <nav className={`barnav ${navbarState ? "open" : ""}`}>
-      <div className="container-tomefy-logos">
+    <nav className={`barnav ${navbarState ? "open" : ""} ${darkTheme ? 'dark-theme' : ''}`}>
+      <div className={`container-tomefy-logos ${darkTheme ? 'dark-theme' : ''}clear`}>
         <div className="container-logo-tom">
           <img className="tomefy-logo" src={logoTomefy} alt="MyLogo" />
         </div>
@@ -65,10 +65,10 @@ export default function Navbar({ navbarState, toggleNavbar ,toggleDarkTheme, dar
         {navbarContent.map((nav, index) => (
           <li
             key={index}
-            className={`nav-item ${activeNav === nav.href ? "active" : ""}`}
+            className={`nav-item ${activeNav === nav.href ? "active" : ""} ${darkTheme ? 'dark-theme' : ''}`}
             onClick={() => handleClickActive(nav.href)}
           >
-            <NavLink to={nav.href} className="nav-link" activeClassName="active">
+            <NavLink to={nav.href} className={`nav-link ${darkTheme ? 'dark-theme' : ''}`} activeClassName="active">
               {nav.source()}
               {nav.navigation}
             </NavLink>
@@ -80,13 +80,13 @@ export default function Navbar({ navbarState, toggleNavbar ,toggleDarkTheme, dar
   );
 }
 
-const IconHome = () => (
+const IconHome = ({darkTheme}) => (
   <svg
     width="22px"
     height="22px"
     viewBox="0 0 24 24"
     fill="none"
-    className="nav-icon"
+    className={`nav-icon ${darkTheme ? 'dark-theme' : ''}`}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -104,12 +104,12 @@ const IconHome = () => (
   </svg>
 )
 
-const IconContact = () => (
+const IconContact = ({darkTheme}) => (
   <svg
     fill="currentColor"
     width="22px"
     height="22px"
-    className="nav-icon"
+    className={`nav-icon ${darkTheme ? 'dark-theme' : ''}`}
     viewBox="0 0 64 64"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -120,12 +120,12 @@ const IconContact = () => (
   </svg>
 );
 
-const IconAbout = () => (
+const IconAbout = ({darkTheme}) => (
   <svg
     width="22px"
     height="22px"
     viewBox="0 0 24 24"
-    className="nav-icon"
+    className={`nav-icon ${darkTheme ? 'dark-theme' : ''}`}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -139,11 +139,11 @@ const IconAbout = () => (
   </svg>
 );
 
-const IconService = () => (
+const IconService = ({darkTheme}) => (
   <svg
     width="22px"
     height="22px"
-    className="nav-icon"
+    className={`nav-icon ${darkTheme ? 'dark-theme' : ''}`}
     viewBox="0 0 48 48"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -168,4 +168,4 @@ const IconService = () => (
       </g>
     </g>
   </svg>
-);
+)

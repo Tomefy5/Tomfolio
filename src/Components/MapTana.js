@@ -7,10 +7,10 @@ import "../Styles/MapTana.css"
 
 const antananarivoPosition = [-19.0007, 47.5424]; // Coordonnées de Antananarivo
 
-const MapTana = () => {
+const MapTana = ({darkTheme}) => {
   return (
     <div style={{ height: "auto", width: "100%" }} className="container-map-tana">
-      <h2 className="map-tana-title">How to find me?</h2>
+      <h2 className={`map-tana-title ${darkTheme ? 'dark-theme' : ''}`}>How to find me?</h2>
       <MapContainer center={antananarivoPosition} zoom={13} style={{ height: "40vh", width: "100%" , borderRadius: '10px'}}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

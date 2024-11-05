@@ -51,6 +51,7 @@
   font-weight: 600;
   line-height: 3rem;
   width: 70%;
+  color: var(--text-color-focus);
 }
 
 .let-talk-link {
@@ -70,6 +71,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 800;
+  color: var(--text-color-focus);
 }
 
 .scroll-text span {

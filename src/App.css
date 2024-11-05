@@ -7,17 +7,25 @@
 }
 
 :root {
-  --background-color: #111111;
+  --background-color: #000000;
   --background-color-second: #0e1018;
-  --text-color-normal: #b4b4b4;
+  --text-color: #b4b4b4;
   --text-color-focus: #ffffff;
+  --container-pdp: #171717;
+  --container-social-media: #2A2A2A;
+  --border-color: #606060;
+  --photo-profil: url(./Assets/Photo_profil/photo-profil.png);
 }
 
 .dark-theme {
   --background-color: #ffffff;
   --background-color-second: #f0f2f5;
-  --text-color-normal: #7f6f7c;
-  --text-color-focus: #0d121f;
+  --text-color: #586a9c;
+  --text-color-focus: #181d21;
+  --container-pdp: #bbbdbf;
+  --container-social-media: #f0f2f5;
+  --border-color: #7f6f7c;
+  --photo-profil: url(./Assets/Photo_profil/photo-profil-ligth.png);
 }
 
 .App {

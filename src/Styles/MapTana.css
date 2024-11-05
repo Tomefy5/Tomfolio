@@ -10,3 +10,7 @@
     padding: 10px;
     height: auto;
 }
+
+.map-tana-title {
+    color: var(--text-color-focus);
+}

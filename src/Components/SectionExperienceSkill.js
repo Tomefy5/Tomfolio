@@ -59,7 +59,7 @@ export default function SectionExperienceSkill({darkTheme}) {
     <div className="container section-work-experience-competencies">
       <div className={`row section-work-experience ${darkTheme ? 'dark-theme': ''}`}>
         <div className="col-12 d-flex flex-column">
-          <h2 className="section-title">Work Experience</h2>
+          <h2 className={`section-title ${darkTheme ? 'dark-theme' : ''}`}>Work Experience</h2>
           <div className="container-experiences">
             {experiences.map((experience, index) => (
               <div
@@ -101,7 +101,7 @@ export default function SectionExperienceSkill({darkTheme}) {
                     alt={`logo${skill.name}`}
                   />
                 </div>
-                <h3 className="competence-name">{skill.name}</h3>
+                <h3 className={`competence-name ${darkTheme ? 'dark-theme': ''}`}>{skill.name}</h3>
               </div>
             ))}
           </div>

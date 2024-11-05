@@ -4,20 +4,26 @@
     box-sizing: border-box;
 }
 
+.info-perso-title {
+    color: var(--text-color-focus);
+}
+
 
 .info-perso-descri {
     text-wrap: balance;
+    color: var(--text-color);
 }
 
 .info-perso-descri .info-perso-descri-title {
     font-size: 1.5rem;
+    color: var(--text-color-focus);
 }
 
 .list-group .list-group-item {
-    background-color: #111111;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color-focus);
     border: none;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid var(--text-color-focus);
 }
 
 

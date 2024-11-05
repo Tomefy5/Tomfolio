@@ -11,7 +11,7 @@
 }
 
 .section-work-experience {
-  background-color: #111111;
+  background-color: var(--background-color);
   height: 280px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -19,7 +19,7 @@
 }
 
 .section-competencies {
-  background-color: #111111;
+  background-color: var(--background-color);
   height: auto;
   border-radius: 10px;
   padding: 15px;
@@ -46,7 +46,7 @@
 }
 
 .container-logo-competence {
-  background-color: #191919;
+  background-color: var(--background-color-second);
   width: 90%;
   height: 65%;
   margin: auto;
@@ -85,6 +85,7 @@
   position: absolute;
   will-change: transform, opacity;
   animation: scroll-div var(--animation-duration, 4.8s) linear infinite;
+  opacity: 0;
 }
 
 .container-years {

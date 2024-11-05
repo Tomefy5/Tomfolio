@@ -10,7 +10,7 @@ import Services from "./Services";
 import Contact from "./Contact";
 import IconArrowRigth from "./IconArrowRigth";
 
-export default function Sections() {
+export default function Sections({darkTheme}) {
   const location = useLocation();
 
   return (
@@ -18,14 +18,14 @@ export default function Sections() {
       <div className="container container-first-sections">
         <div className="row g-4 ">
           <div className="col-xl-4 m-xl-0 mt-0">
-            <SectionProfil />
+            <SectionProfil darkTheme={darkTheme} />
           </div>
           <div className="col-xl-8 m-xl-0 variable-section">
             <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/services" element={<Services />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>
+              <Route path="/" element={<Home darkTheme={darkTheme} />}></Route>
+              <Route path="/about" element={<About darkTheme={darkTheme}/>}></Route>
+              <Route path="/services" element={<Services darkTheme={darkTheme}/>}></Route>
+              <Route path="/contact" element={<Contact darkTheme={darkTheme}/>}></Route>
             </Routes>
           </div>
         </div>
@@ -34,10 +34,10 @@ export default function Sections() {
         <div className="conatiner container-second-section mt-4 mb-4">
           <div className="row g-4">
             <div className="col-xl-8">
-              <ServicesOffered />
+              <ServicesOffered darkTheme={darkTheme} />
             </div>
             <div className="col-xl-4 h-auto">
-              <div className="container-let-work-together">
+              <div className={`container-let-work-together ${darkTheme ? 'dark-theme': ''}`}>
                 <ScrollingText />
                 <div className="work-together-text-container">
                   <h1 className="text-work-together">Let's 👋 Work Together</h1>
@@ -52,17 +52,17 @@ export default function Sections() {
         </div>
       )}
     </div>
-  );
+  )
 }
 
-function Home() {
+function Home({darkTheme}) {
   return (
     <div className="row">
       <div className="col-xl-6 m-xl-0">
-        <SectionExperienceSkill />
+        <SectionExperienceSkill darkTheme={darkTheme}/>
       </div>
       <div className="col-xl-6 m-xl-0">
-        <RecentProjects />
+        <RecentProjects darkTheme={darkTheme}/>
       </div>
     </div>
   );

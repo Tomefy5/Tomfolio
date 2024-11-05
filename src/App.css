@@ -6,6 +6,20 @@
   margin: 0;
 }
 
+:root {
+  --background-color: #111111;
+  --background-color-second: #0e1018;
+  --text-color-normal: #b4b4b4;
+  --text-color-focus: #ffffff;
+}
+
+.dark-theme {
+  --background-color: #ffffff;
+  --background-color-second: #f0f2f5;
+  --text-color-normal: #7f6f7c;
+  --text-color-focus: #0d121f;
+}
+
 .App {
   width: 100%;
   height: auto;

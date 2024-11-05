@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HeaderTools from "./HeaderTools";
 import logoTomefy from "../Assets/Logo_tomefy/logo_tomefy.png";
 import logoTomfolio from "../Assets/Logo_tomefy/logo_nom_tomefy.png";
@@ -25,7 +25,7 @@ const navbarContent = [
     alternative: "iconService",
     href: "/services",
   },
-  
+
   {
     navigation: "Contact",
     source: () => <IconContact />,
@@ -34,7 +34,12 @@ const navbarContent = [
   },
 ];
 
-export default function Navbar({ navbarState, toggleNavbar }) {
+export default function Navbar({ navbarState, toggleNavbar ,toggleDarkTheme, darkTheme}) {
+  const [activeNav, setActiveNav] = useState("");
+  const handleClickActive = (href) => {
+    setActiveNav(href);
+  };
+
   return (
     <nav className={`barnav ${navbarState ? "open" : ""}`}>
       <div className="container-tomefy-logos">
@@ -57,16 +62,20 @@ export default function Navbar({ navbarState, toggleNavbar }) {
         </button>
       </div>
       <ul className="barnav-nav">
-        {navbarContent.map((nav) => (
-          <li className="nav-item">
-            <Link to={nav.href} className="nav-link">
+        {navbarContent.map((nav, index) => (
+          <li
+            key={index}
+            className={`nav-item ${activeNav === nav.href ? "active" : ""}`}
+            onClick={() => handleClickActive(nav.href)}
+          >
+            <NavLink to={nav.href} className="nav-link" activeClassName="active">
               {nav.source()}
               {nav.navigation}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
-      <HeaderTools />
+      <HeaderTools toggleDarkTheme={toggleDarkTheme}/>
     </nav>
   );
 }
@@ -93,7 +102,7 @@ const IconHome = () => (
       stroke-linecap="round"
     />
   </svg>
-);
+)
 
 const IconContact = () => (
   <svg

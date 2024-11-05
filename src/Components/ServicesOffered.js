@@ -11,9 +11,9 @@ const servicesOffered = [
   { service: "UX/UI Design", icon: iconDesign },
 ];
 
-export default function ServicesOffered() {
+export default function ServicesOffered({darkTheme}) {
   return (
-    <div className="container-section-services-offered d-flex flex-column">
+    <div className={`container-section-services-offered d-flex flex-column ${darkTheme ? 'dark-theme': ''}`}>
       <div className="container-section-title d-flex justify-content-between">
         <h2 className="section-title">Services I offered</h2>
         <Link className="section-service-link" to={"/services"}>
@@ -23,8 +23,8 @@ export default function ServicesOffered() {
       </div>
       <div className="container-services-offered">
         {servicesOffered.map((service, index) => (
-          <div key={index} className="container-service">
-            <div className="container-icon-service">
+          <div key={index} className={`container-service ${darkTheme ? 'dark-theme': ''}`}>
+            <div className={`container-icon-service ${darkTheme ? 'dark-theme': ''}`}>
               <img className="icon-service" src={service.icon} alt={`icon${service.service}`} />
             </div>
             <h5 className="service-name">{service.service}</h5>
@@ -32,5 +32,5 @@ export default function ServicesOffered() {
         ))}
       </div>
     </div>
-  );
+  )
 }

@@ -7,9 +7,9 @@ const recentProjects = [
   { link: "./", type: "E-learning" },
   { link: "./", type: "E-commerce" },
 ];
-export default function RecentProjects() {
+export default function RecentProjects({darkTheme}) {
   return (
-    <div className="section-recent-projects d-flex flex-column">
+    <div className={`section-recent-projects d-flex flex-column ${darkTheme ? 'dark-theme' : ''}`}>
       <div className="container-section-title-link d-flex justify-content-between">
         <h2 className="section-title">Recent Projects</h2>
         <a href="./">

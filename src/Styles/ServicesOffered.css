@@ -7,7 +7,7 @@
 }
 
 .container-section-services-offered {
-  background-color: #111111;
+  background-color: var(--background-color);
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -35,7 +35,7 @@
 }
 
 .container-service {
-  background-color: #191919;
+  background-color: var(--background-color-second);
   max-width: 185px;
   width: 23%;
   min-width: 140px;
@@ -46,7 +46,7 @@
 }
 
 .container-icon-service {
-  background-color: #111111;
+  background-color: var(--background-color);
   width: 90%;
   height: 70%;
   border-radius: 10px;

@@ -4,11 +4,11 @@ import iconBrightness from "../Assets/icons/sun-2-svgrepo-com.svg";
 import iconToTalk from "../Assets/icons/arrow-u-down-right-svgrepo-com.svg";
 import { Link } from "react-router-dom";
 
-export default function HeaderTools() {
+export default function HeaderTools({toggleDarkTheme}) {
   return (
     <div className="container-header-tools row">
       <div className="container-tool-brightness col-3">
-        <button className="btn-brightness">
+        <button className="btn-brightness" onClick={toggleDarkTheme}>
           <img
             className="icon-brightness"
             src={iconBrightness}

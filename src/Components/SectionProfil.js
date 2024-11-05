@@ -10,9 +10,9 @@ const profilInformations = {
     "Passionate Full Stack Developer with 2 years of experience, always evolving and ready for new challenges.",
 };
 
-export default function SectionProfil() {
+export default function SectionProfil({darkTheme}) {
   return (
-    <div className="section-profil">
+    <div className={`section-profil ${darkTheme ? 'dark-theme': ''}`}>
       <div className="container-fluid container-pdp"></div>
       <h1 className="section-profil-name">{profilInformations.name}</h1>
       <p className="section-profil-description">
@@ -30,7 +30,7 @@ export default function SectionProfil() {
       </div>
       <SocialMedia />
     </div>
-  );
+  )
 }
 
 

@@ -5,7 +5,7 @@ import logoTomfolio from "../Assets/Logo_tomefy/logo_nom_tomefy.png"
 import Navbar from './Navbar'
 import logoHamburger from "../Assets/icons/hamburger-menu-svgrepo-com.svg"
 
-export default function Header() {
+export default function Header({toggleDarkTheme, darkTheme}) {
 
   const [isNavbarOpen, setNavbarOpen] = useState(false)
 
@@ -14,14 +14,14 @@ export default function Header() {
   }
 
   return (
-    <header className='header-navbar container-fluid'>
-        <div className='container-logo-tom'>
+    <header className={`header-navbar container-fluid ${darkTheme ? 'dark-theme' : ''}`}>
+        <div className={`container-logo-tom ${darkTheme ? 'dark-theme' : ''}`}>
           <img className='tomefy-logo' src={logoTomefy} alt="MyLogo" />
         </div>
-        <div className='container-nom-logo'>
+        <div className={`container-nom-logo ${darkTheme ? 'dark-theme' : ''}`}>
           <img className='tomefy-logo-name' src={logoTomfolio} alt="My logo name" />
         </div>
-        <Navbar navbarState={isNavbarOpen} toggleNavbar={toggleNavbar}/>
+        <Navbar navbarState={isNavbarOpen} toggleNavbar={toggleNavbar} toggleDarkTheme={toggleDarkTheme} darkTheme={darkTheme}/>
         <button className='btn-hamburger' onClick={toggleNavbar} >
           <img className='logoHamburger' src={logoHamburger} alt="logoDownload" />
         </button>

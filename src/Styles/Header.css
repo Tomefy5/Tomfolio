@@ -5,7 +5,7 @@
 }
 
 .header-navbar {
-    background-color: #111111;
+    background-color: var(--background-color);
     height: auto;
     margin-top: 1vh;
     border-radius: 10px;
@@ -18,7 +18,7 @@
 .container-logo-tom {
     height: 40px;
     width: 40px;
-    background-color:  #111111;
+    background-color:  var(--background-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@
     height: 40px;
     width: 80px;
     margin-left: 10px;
-    background-color: #111111;
+    background-color: var(--background-color);
 }
 
 .tomefy-logo-name {

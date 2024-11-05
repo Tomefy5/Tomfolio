@@ -41,6 +41,14 @@
     margin: 0;
 }
 
+.nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link.active .nav-icon {
+    color: #ffffff;
+}
+
 .nav-link:hover {
     color: #ffffff;
     transition: all 0.2s ease;

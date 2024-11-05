@@ -53,11 +53,11 @@ const skills = [
   { name: "Github", logo: logoGithub },
 ];
 
-export default function SectionExperienceSkill() {
+export default function SectionExperienceSkill({darkTheme}) {
 
   return (
     <div className="container section-work-experience-competencies">
-      <div className="row section-work-experience">
+      <div className={`row section-work-experience ${darkTheme ? 'dark-theme': ''}`}>
         <div className="col-12 d-flex flex-column">
           <h2 className="section-title">Work Experience</h2>
           <div className="container-experiences">
@@ -88,13 +88,13 @@ export default function SectionExperienceSkill() {
           </div>
         </div>
       </div>
-      <div className="row section-competencies">
+      <div className={`row section-competencies ${darkTheme ? 'dark-theme': ''}`}>
         <div className="col-12">
           <h2 className="section-title">Expert Area</h2>
           <div className="container-competencies container mt-2">
             {skills.map((skill, index) => (
               <div key={index} className="container-competence col-4">
-                <div className="container-logo-competence">
+                <div className={`container-logo-competence ${darkTheme ? 'dark-theme': ''}`}>
                   <img
                     className="logo-competence"
                     src={skill.logo}
@@ -108,5 +108,5 @@ export default function SectionExperienceSkill() {
         </div>
       </div>
     </div>
-  );
+  )
 }

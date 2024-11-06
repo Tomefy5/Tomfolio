@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className={`App ${darkTheme ? 'dark-theme' : ''}`}>
         <div className="container-sections container">
           <Header darkTheme={darkTheme} toggleDarkTheme={toggleDarkTheme} />
           <Sections darkTheme={darkTheme} />

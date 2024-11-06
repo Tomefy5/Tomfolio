@@ -15,17 +15,21 @@
   --container-social-media: #2A2A2A;
   --border-color: #606060;
   --photo-profil: url(./Assets/Photo_profil/photo-profil.png);
+  --btn-to-talk: #1b1d26; 
+  --app-bg: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
 }
 
 .dark-theme {
   --background-color: #ffffff;
   --background-color-second: #f0f2f5;
   --text-color: #586a9c;
-  --text-color-focus: #181d21;
+  --text-color-focus: #2c353b;
   --container-pdp: #bbbdbf;
-  --container-social-media: #f0f2f5;
+  --container-social-media: #e2e3e4;
   --border-color: #7f6f7c;
   --photo-profil: url(./Assets/Photo_profil/photo-profil-ligth.png);
+  --btn-to-talk: #b4b4b4; 
+  --app-bg: #b4b4b4;
 }
 
 .App {
@@ -34,7 +38,7 @@
   position: absolute;
   font-size: 16px;
   color: white;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background: var(--app-bg);
   background-blend-mode: multiply;
 }
 

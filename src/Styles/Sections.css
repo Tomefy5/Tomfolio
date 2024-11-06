@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  color: var(--text-color-focus);
+  color: var(--text-color);
 }
 
 .scroll-text span {

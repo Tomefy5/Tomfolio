@@ -17,7 +17,7 @@
 .barnav-nav {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
     height: 30px;
     align-items: center;

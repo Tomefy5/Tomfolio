@@ -5,6 +5,8 @@ import HeaderTools from "./HeaderTools";
 import logoTomefy from "../Assets/Logo_tomefy/logo_tomefy.png";
 import logoTomfolio from "../Assets/Logo_tomefy/logo_nom_tomefy.png";
 import logoHamburger from "../Assets/icons/hamburger-menu-svgrepo-com.svg";
+import logoTomefyLigth from "../Assets/Logo_tomefy/logo_tomefy_ligth.png"
+import logoTomfolioLigth from "../Assets/Logo_tomefy/logo_nom_tomefy_ligth.png"
 
 const navbarContent = [
   {
@@ -27,6 +29,13 @@ const navbarContent = [
   },
 
   {
+    navigation: "Project",
+    source: () => <IconContact />,
+    alternative: "iconContact",
+    href: "/contact",
+  },
+
+  {
     navigation: "Contact",
     source: () => <IconContact />,
     alternative: "iconContact",
@@ -44,12 +53,12 @@ export default function Navbar({ navbarState, toggleNavbar ,toggleDarkTheme, dar
     <nav className={`barnav ${navbarState ? "open" : ""} ${darkTheme ? 'dark-theme' : ''}`}>
       <div className={`container-tomefy-logos ${darkTheme ? 'dark-theme' : ''}clear`}>
         <div className="container-logo-tom">
-          <img className="tomefy-logo" src={logoTomefy} alt="MyLogo" />
+          <img className="tomefy-logo" src={darkTheme ? logoTomefyLigth : logoTomefy} alt="MyLogo" />
         </div>
         <div className="container-nom-logo" style={{ width: "45%" }}>
           <img
             className="tomefy-logo-name"
-            src={logoTomfolio}
+            src={darkTheme ? logoTomfolioLigth : logoTomfolio}
             alt="My logo name"
           />
         </div>
